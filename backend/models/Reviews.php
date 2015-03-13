@@ -74,6 +74,6 @@ class Reviews extends \yii\db\ActiveRecord
      */
     public function getCompaniesCompany()
     {
-        return $this->hasOne(Companies::className(), ['company_id' => 'companies_company_id']);
+        return $this->hasOne(Companies::className(), ['company_id' => 'company_id']);
     }
 }

@@ -1,7 +1,9 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
+use backend\models\Companies
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\Reviews */
@@ -15,6 +17,11 @@ use yii\widgets\ActiveForm;
     <?#= $form->field($model, 'review_id')->textInput() ?>
 
     <?= $form->field($model, 'company_id')->textInput() ?>
+    <?= $form->field($model, 'company_id') ->dropDownList(
+        ArrayHelper::map(Companies::find()->all(), 'company_id', 'company_name'), 
+        ['prompt' => 'Select Company']
+
+    ) ?>
 
     <?= $form->field($model, 'user_id')->textInput() ?>
 
