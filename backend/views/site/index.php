@@ -9,7 +9,7 @@ $this->title = 'Taxconomy';
 
         <p class="lead">You can control the taxi economy</p>
 
-        <p><a class="btn btn-lg btn-success" href="review/create">Post Your Review</a></p>
+        <p><a class="btn btn-lg btn-success" href="reviews/create">Post Your Review</a></p>
     </div>
 
     <div class="body-content">
