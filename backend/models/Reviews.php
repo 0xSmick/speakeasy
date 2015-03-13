@@ -20,6 +20,8 @@ use Yii;
  */
 class Reviews extends \yii\db\ActiveRecord
 {
+
+    public $companies;
     /**
      * @inheritdoc
      */
@@ -37,7 +39,8 @@ class Reviews extends \yii\db\ActiveRecord
             [['company_id', 'user_id', 'review_title', 'review_contents', 'review_creation_date', 'review_star_rating'], 'required'],
             [['company_id', 'user_id'], 'integer'],
             [['review_contents', 'review_star_rating'], 'string'],
-            [['review_creation_date'], 'safe'],
+            [['review_creation_date', 'companies'], 'safe'],
+            [['companies'], 'safe'],
             [['review_title'], 'string', 'max' => 100]
         ];
     }

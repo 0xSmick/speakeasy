@@ -27,11 +27,17 @@ $this->params['breadcrumbs'][] = $this->title;
 
             //'review_id',
             'company_id',
+            [
+            'attribute' => 'Companies Name',
+            'value' => 'companies.company_name'
+                
+            ],
+
             //'companiesCompany.company_name',
             'user_id',
             'review_title',
             'review_contents:ntext',
-            // 'review_creation_date',
+            'review_creation_date',
             'review_star_rating',
 
             ['class' => 'yii\grid\ActionColumn'],

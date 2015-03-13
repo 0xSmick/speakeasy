@@ -12,6 +12,8 @@ use backend\models\Reviews;
  */
 class ReviewsSearch extends Reviews
 {
+
+    public $companies;
     /**
      * @inheritdoc
      */
@@ -19,7 +21,7 @@ class ReviewsSearch extends Reviews
     {
         return [
             [['review_id', 'company_id', 'user_id'], 'integer'],
-            [['review_title', 'review_contents', 'review_creation_date', 'review_star_rating'], 'safe'],
+            [['review_title', 'review_contents', 'review_creation_date', 'review_star_rating','companies'], 'safe'],
         ];
     }
 
