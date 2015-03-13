@@ -52,7 +52,7 @@ class Reviews extends \yii\db\ActiveRecord
     {
         return [
             'review_id' => 'Review ID',
-            'company_id' => 'Company ID',
+            'company_id' => 'Company Name',
             'user_id' => 'User ID',
             'review_title' => 'Review Title',
             'review_contents' => 'Review Contents',

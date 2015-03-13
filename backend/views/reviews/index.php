@@ -32,7 +32,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'value' => 'companiesCompany.company_name'
                 
             ],
-
             //'companiesCompany.company_name',
             'user_id',
             'review_title',

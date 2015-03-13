@@ -59,4 +59,5 @@ class Companies extends \yii\db\ActiveRecord
     {
         return $this->hasMany(Reviews::className(), ['company_id' => 'company_id']);
     }
+
 }
